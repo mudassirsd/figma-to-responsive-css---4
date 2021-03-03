@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 93%;
+  margin: auto;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 29px;
+  color: #4e5150;
+  transform: rotate(-0.02deg);
+
+  margin-top: 32px;
+  margin-bottom: 21px;
+}
+
+.cart {
+  border-radius: 12px;
+  background-color: #f2f2f2;
+  padding: 30px 26px 18px 26px;
+  margin-bottom: 40px;
+}
+
+.cart .goods {
+  display: flex;
+  margin-bottom: 29px;
+}
+
+.cart .goods img {
+  object-fit: cover;
+  border-radius: 13px;
+  width: 40%;
+  margin-right: 18px;
+}
+
+.cart .goods .goods-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cart .goods .goods-info h3 {
+  font-size: 12px;
+  line-height: 15px;
+  color: #4e5150;
+}
+
+.cart .goods .goods-info p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #f2994a;
+}
+
+.cart .goods .goods-info p del {
+  font-size: 10px;
+  line-height: 12px;
+  color: #4e5150;
+  margin-left: 10px;
+}
+
+.cart .goods .goods-info .counter {
+  box-sizing: border-box;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding: 14px 10px;
+  width: 120%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart .goods .goods-info .counter span {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  color: #828282;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid #bdbdbd;
+}
+
+.cart .total {
+  margin-top: 87px;
+}
+
+.cart .total div {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-info .contact {
+  margin-bottom: 45px;
+}
+
+.user-info div h2 {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.user-info div label,
+.region label {
+  font-size: 10px;
+  line-height: 12px;
+  color: #4f4f4f;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.user-info div input[type="text"],
+select {
+  height: 40.56px;
+  width: 100%;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding-left: 40px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
+  background-position: 10px 10px;/*this property is aligning the svg images correctly*/
+  margin-bottom: 17px;
+}
+
+.user-info div input[type="text"]:focus {
+  border: 2px solid rgb(21, 85, 206);
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.region {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 0px 23px;
+}
+
+.region label:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.region label:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#country {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#postal-code {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.save-info {
+  display: flex;
+}
+
+.save-info label {
+  margin-left: 8px;
+  margin-top: 6px;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  margin-top: 21px;
+  width: 166px;
+  height: 54px;
+  border: 1px solid #f2994a;
+  background-color: #f2994a;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+button:hover {
+  color: #e0e0e0;
+  background-color: #da8337;
+  border: 1px solid #da8337;
+}
+
+.footer p {
+  margin-top: 100px;
+  margin-bottom: 19px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a9a9a9;
+  text-align: center;
+}
+
+#email,
+#phone,
+#name,
+#address,
+#city,
+#country,
+#postal-code {
+  background-repeat: no-repeat;
+}
+
+#email {
+  background-image: url(assets/email-white-18dp.svg);
+}
+
+#phone {
+  background-image: url(assets/call-white-18dp.svg);
+}
+
+#name {
+  background-image: url(assets/account_circle-white-18dp.svg);
+}
+
+#address {
+  background-image: url(assets/home-white-18dp.svg);
+}
+
+#city,
+#country {
+  background-image: url(assets/location_city-white-18dp.svg);
+}
+
+#postal-code {
+  background-image: url(assets/markunread_mailbox-white-18dp.svg);
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat(auto, 0.5fr);
+  }
+
+  .cart {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .user-info {
+    grid-row: 1 / 3;
+    grid-column: 1;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    width: 60%;
+  }
+
+  h1 {
+    margin-bottom: 51px;
+  }
+
+  .user-info .contact h2,
+  .user-info .shipping h2 {
+    margin-bottom: 15px;
+  }
+
+  .content {
+    grid-gap: 110px;
+  }
+
+  .footer p {
+    margin-top: 166px;
+  }
+}
